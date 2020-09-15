@@ -1,0 +1,758 @@
+:root {
+  --primary-color: #01a792;
+}
+*::selection {
+  color: #ffffff;
+  background: var(--primary-color);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+body {
+  margin: 0;
+}
+
+main {
+  padding: 0 80px;
+}
+
+html h1 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+html h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+html h3 {
+  font-size: 38px;
+  margin: 10px 0;
+}
+
+html p {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+/*------front-section-----------*/
+.front-section {
+  z-index: 999;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.front-section > .container {
+  align-self: center;
+}
+
+.front-section h1 {
+  color: var(--primary-color);
+}
+
+.info-container {
+  margin-top: 80px;
+  /* border-bottom: 1px solid #01a792; */
+  padding: 20px;
+}
+
+.icons {
+  margin-top: 80px;
+  margin-left: 10px;
+}
+
+.icons svg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+.icons svg:hover {
+  border: 3px solid var(--primary-color);
+}
+
+/*----------------ProjectComponent-----------------*/
+
+.projekt {
+  z-index: 999;
+  position: relative;
+  padding-top: 100px;
+}
+
+.subtitleH2 {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+.subtitleH3 {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  color: var(--primary-color);
+}
+
+.projekt > .container {
+  align-self: center;
+}
+
+.projekt > .container > .row {
+  padding-top: 40px;
+}
+
+.projekt h2 {
+  color: var(--primary-color);
+  text-align: right;
+  font-size: 3.5em;
+}
+
+.projekt svg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.projekt .col-md-6 {
+  padding-bottom: 150px;
+}
+
+.opis-projekt {
+  padding: 0 50px 0 50px !important;
+}
+
+.projekt img {
+  -webkit-box-shadow: 5px -5px 0px 0px rgba(1, 167, 146, 1);
+  -moz-box-shadow: 5px -5px 0px 0px rgba(1, 167, 146, 1);
+  box-shadow: 5px -5px 0px 0px rgba(1, 167, 146, 1);
+}
+
+.projekt a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.projekt a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.svgIcons,
+.svgIconsRight {
+  margin-bottom: -10px;
+}
+
+.svgIcons svg:first-child {
+  margin-left: 0;
+}
+
+.svgIconsRight svg:last-child {
+  margin-right: 0;
+}
+
+/*----------sidebar-----*/
+.sidebar-container {
+  width: 70px;
+  padding: 5px;
+  height: 100vh;
+  border-right: 2px solid white;
+  position: fixed;
+  top: 20px;
+}
+
+.sidebar-container a {
+  display: none;
+}
+
+.sidebar-container .active {
+  display: block;
+  color: var(--primary-color);
+}
+
+.sidebar-container a:hover {
+  color: var(--primary-color);
+}
+
+.sidebar1-3 {
+  width: 65px;
+  height: 33vh;
+  position: fixed;
+  top: 20px;
+}
+
+.sidebar1-3.scroll-down {
+  border-right: 2px solid var(--primary-color);
+}
+
+.sidebar1-3.scroll-up {
+  border-right: 2px solid var(--primary-color);
+  animation: pulse1up 0.8s 1;
+}
+
+.sidebar2-3 {
+  width: 65px;
+  height: 66vh;
+  position: fixed;
+  top: 20px;
+}
+
+.sidebar2-3.scroll-down {
+  border-right: 2px solid var(--primary-color);
+  animation: pulse1down 0.8s 1;
+}
+
+.sidebar2-3.scroll-up {
+  border-right: 2px solid var(--primary-color);
+  animation: pulse2up 0.8s 1;
+}
+
+.sidebar3-3 {
+  width: 65px;
+  height: 100vh;
+  position: fixed;
+  top: 20px;
+}
+
+.sidebar3-3.scroll-down {
+  border-right: 2px solid var(--primary-color);
+  animation: pulse2down 0.8s 1;
+}
+
+.sidebar3-3.scroll-up {
+  border-right: 2px solid var(--primary-color);
+}
+
+@keyframes pulse1down {
+  0% {
+    height: 33vh;
+  }
+  100% {
+    border-right: 2px solid var(--primary-color);
+  }
+}
+
+@keyframes pulse1up {
+  0% {
+    width: 65px;
+    height: 66vh;
+    border-right: 2px solid var(--primary-color);
+    position: fixed;
+    top: 20px;
+  }
+  100% {
+    border-right: 2px solid var(--primary-color);
+  }
+}
+
+@keyframes pulse2down {
+  0% {
+    width: 65px;
+    height: 66vh;
+    border-right: 2px solid var(--primary-color);
+    position: fixed;
+    top: 20px;
+  }
+  100% {
+    border-right: 2px solid var(--primary-color);
+  }
+}
+
+@keyframes pulse2up {
+  0% {
+    width: 65px;
+    height: 100vh;
+    border-right: 2px solid var(--primary-color);
+    position: fixed;
+    top: 20px;
+  }
+  100% {
+    border-right: 2px solid var(--primary-color);
+  }
+}
+
+/*--------SvgFixed------------*/
+.svg-fixed img {
+  width: 20%;
+  max-width: 200px;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  opacity: 0.2;
+  z-index: 0;
+}
+.test {
+  height: 1000px;
+}
+
+.box {
+  position: fixed;
+  top: 0;
+  transform: rotate(80deg);
+  left: 0;
+}
+
+.wave {
+  position: fixed;
+  top: 0;
+  left: 0;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  background: black;
+  opacity: 0.1;
+  width: 1500px;
+  height: 1300px;
+  margin-left: -150px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 100s infinite linear;
+}
+
+.box:after {
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+/*---------------------ContactComponent-----------------*/
+.kontakt {
+  padding-top: 100px;
+}
+.kontakt h2 {
+  color: var(--primary-color);
+  font-size: 3.5em;
+}
+
+.kontakt p {
+  font-size: 20px;
+}
+
+.kontakt a {
+  text-decoration: none;
+  color: black;
+}
+
+.kontakt a:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.dane-kontaktowe {
+  padding: 0 20px;
+}
+
+.linkOUT {
+  display: none;
+}
+
+/*--------------------ContactForm-------------------*/
+
+.daneKontaktowe {
+  text-align: left;
+  margin: 50px auto;
+  padding: 0 100px !important;
+}
+
+.daneKontaktowe h3 {
+  margin-bottom: 30px;
+}
+
+.daneKontaktowe p {
+  margin-bottom: 2px;
+}
+
+.socialIcon {
+  margin: 20px 20px 20px 0;
+  width: 40px !important;
+  height: auto;
+  vertical-align: middle;
+}
+
+.socialIcon:hover {
+  color: #000000b8;
+}
+
+/*ContactForm*/
+.contact {
+  /* margin-top: 50px; */
+  text-align: left;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.buttonSend {
+  text-align: right;
+  margin-top: 20px;
+}
+
+/* .form {
+    text-align: center;
+  } */
+
+h2 {
+  /* text-align: center; */
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+input[type="text"],
+input[type="email"],
+input[type="subject"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  outline: black;
+  background-color: transparent;
+}
+.submit {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: none;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: rgb(200, 200, 200);
+  color: white;
+}
+.btn-mod.btn-large {
+  height: auto;
+  padding: 13px 52px;
+  font-size: 15px;
+  transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+  letter-spacing: 2px;
+}
+
+/*---------------Footer----------------------*/
+.footer {
+  margin-left: 120px;
+  border-top: 1px solid gray;
+  padding: 10px;
+}
+
+.footer p {
+  font-size: 1em;
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .subtitleH2 {
+    padding-bottom: 0;
+  }
+  .subtitleH3 {
+    padding-bottom: 0;
+  }
+  .projekt .col-md-6 {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+  html h3 {
+    font-size: 32px;
+  }
+  html p {
+    font-size: 28px;
+  }
+  .projekt svg {
+    width: 30px;
+    height: 30px;
+  }
+  /*----------sidebar-----*/
+  .sidebar-container {
+    width: 100%;
+    padding: 5px;
+    height: 35px;
+    border-bottom: 2px solid white;
+    border-right: none;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    background-color: #ffffffeb;
+    z-index: 9999;
+  }
+
+  .sidebar1-3 {
+    width: 33vw;
+    height: 35px;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+  }
+
+  .sidebar1-3.scroll-down {
+    border-bottom: 2px solid var(--primary-color);
+    border-right: none;
+  }
+
+  .sidebar1-3.scroll-up {
+    border-bottom: 2px solid var(--primary-color);
+    border-right: none;
+    animation: pulse1up 0.8s 1;
+  }
+
+  .sidebar2-3 {
+    width: 66vw;
+    height: 35px;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+  }
+
+  .sidebar2-3.scroll-down {
+    border-bottom: 2px solid var(--primary-color);
+    border-right: none;
+    animation: pulse1down 0.8s 1;
+  }
+
+  .sidebar2-3.scroll-up {
+    border-bottom: 2px solid var(--primary-color);
+    border-right: none;
+    animation: pulse2up 0.8s 1;
+  }
+
+  .sidebar3-3 {
+    width: 100vw;
+    height: 35px;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+  }
+
+  .sidebar3-3.scroll-down {
+    border-bottom: 2px solid var(--primary-color);
+    border-right: none;
+    animation: pulse2down 0.8s 1;
+  }
+
+  .sidebar3-3.scroll-up {
+    border-bottom: 2px solid var(--primary-color);
+    border-right: none;
+  }
+
+  @keyframes pulse1down {
+    0% {
+      width: 33vw;
+    }
+    100% {
+      border-bottom: 2px solid var(--primary-color);
+      border-right: none;
+    }
+  }
+
+  @keyframes pulse1up {
+    0% {
+      width: 66vw;
+      height: 35px;
+      border-bottom: 2px solid var(--primary-color);
+      border-right: none;
+      position: fixed;
+      top: auto;
+      bottom: 0;
+    }
+    100% {
+      border-bottom: 2px solid var(--primary-color);
+      border-right: none;
+    }
+  }
+
+  @keyframes pulse2down {
+    0% {
+      width: 66vw;
+      height: 35px;
+      border-bottom: 2px solid var(--primary-color);
+      border-right: none;
+      position: fixed;
+      top: auto;
+      bottom: 0;
+    }
+    100% {
+      border-bottom: 2px solid var(--primary-color);
+      border-right: none;
+    }
+  }
+
+  @keyframes pulse2up {
+    0% {
+      width: 100vw;
+      height: 35px;
+      border-bottom: 2px solid var(--primary-color);
+      border-right: none;
+      position: fixed;
+      top: auto;
+      bottom: 0;
+    }
+    100% {
+      border-bottom: 2px solid var(--primary-color);
+      border-right: none;
+    }
+  }
+  .svg-fixed img {
+    bottom: 35px;
+  }
+
+  .projekt > .container > .row {
+    padding-top: 0;
+  }
+
+  .front-section {
+    height: 100%;
+    padding-top: 50px;
+  }
+
+  .info-container {
+    margin-top: 0;
+    padding: 20px;
+  }
+
+  .footer {
+    padding: 0px 5px 0px 0px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    padding: 0 10px 10px 10px;
+  }
+  .icons {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .dane-kontaktowe {
+    padding: 0 0;
+  }
+  .contact {
+    padding: 0 0;
+  }
+
+  .linkIN {
+    display: none;
+  }
+
+  .linkOUT {
+    display: block;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  html h1 {
+    font-size: 54px;
+  }
+  html h2 {
+    font-size: 36px;
+  }
+  html h3 {
+    font-size: 34px;
+  }
+  html p {
+    font-size: 28px;
+  }
+  .icons svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .projekt {
+    padding-top: 200px;
+  }
+  .opis-projekt {
+    padding: 20px 50px 0 50px !important;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 575px) {
+  html h1 {
+    font-size: 50px;
+  }
+  html h2 {
+    font-size: 32px;
+  }
+  html h3 {
+    font-size: 28px;
+  }
+  html p {
+    font-size: 24px;
+  }
+  .icons svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .projekt {
+    padding-top: 50px;
+  }
+  .projekt h2,
+  .kontakt h2 {
+    font-size: 3em;
+  }
+  .opis-projekt {
+    padding: 20px 20px 0 20px !important;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 399px) {
+  html h1 {
+    font-size: 46px;
+  }
+  html h2 {
+    font-size: 28px;
+  }
+  html h3 {
+    font-size: 24px;
+  }
+  html p {
+    font-size: 20px;
+  }
+  .icons svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .projekt {
+    padding-top: 50px;
+  }
+  .projekt h2,
+  .kontakt h2 {
+    font-size: 2.5em;
+  }
+  .opis-projekt {
+    padding: 20px 10px 0 10px !important;
+  }
+}
