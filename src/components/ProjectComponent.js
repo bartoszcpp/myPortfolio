@@ -25,7 +25,7 @@ const ProjectComponent = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://www.kmfurniture.pl/"
+              href="https://kmfurniture.netlify.app/"
             >
               <Image alt="kmfurniture" filename="kmfurniture.jpg" />
               {/* <img
@@ -88,7 +88,7 @@ const ProjectComponent = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/bartoszcpp/skleponline.pl"
+              href="https://github.com/bartoszcpp/skleponline.pl/tree/skleponline"
             >
               Github
             </a>
