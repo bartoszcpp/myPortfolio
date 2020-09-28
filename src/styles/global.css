@@ -281,9 +281,31 @@ html p {
 }
 
 /*--------SvgFixed------------*/
-.svg-fixed img {
+
+.svg-fixed1 svg {
+  height: auto;
+  width: 20%;
+  max-width: 400px;
+  position: fixed;
+  bottom: 0;
+  /* right: 10px; */
+  opacity: 0.2;
+  z-index: 0;
+}
+.svg-fixed2 svg {
+  height: auto;
   width: 20%;
   max-width: 200px;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  opacity: 0.2;
+  z-index: 0;
+}
+.svg-fixed3 svg {
+  height: auto;
+  width: 20%;
+  max-width: 400px;
   position: fixed;
   bottom: 0;
   right: 10px;
@@ -619,7 +641,9 @@ textarea {
       border-right: none;
     }
   }
-  .svg-fixed img {
+  .svg-fixed1 svg,
+  .svg-fixed2 svg,
+  .svg-fixed3 svg {
     bottom: 35px;
   }
 
