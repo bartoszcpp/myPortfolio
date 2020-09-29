@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react"
-import WebDeveloper from "../assets/webdeveloper.svg"
+import WebDeveloper from "../assets/web-developer.svg"
 import StandingMan from "../assets/standing-man.svg"
 import ReplyMan from "../assets/reply-man.svg"
 import gsap from "gsap"
@@ -58,7 +58,7 @@ const SvgFixed = () => {
           scrollTrigger: {
             trigger: "#section2",
             start: "top 10%",
-            end: "bottom 20%",
+            end: "bottom top",
             onToggle: self =>
               gsap.fromTo(
                 webDeveloper,
@@ -81,16 +81,16 @@ const SvgFixed = () => {
           autoAlpha: 1,
           scrollTrigger: {
             trigger: "#section3",
-            start: "top 10%",
-            end: "bottom 10%",
-            onToggle: self =>
+            start: "top 20%",
+            end: "bottom -50%",
+            onToggle: self2 =>
               gsap.fromTo(
                 replyMan,
-                { x: self.isActive ? "-=300" : "0" },
+                { x: self2.isActive ? "-=300" : "0" },
                 {
-                  x: self.isActive ? "0" : "-=300",
+                  x: self2.isActive ? "0" : "-=300",
                   duration: 1,
-                  autoAlpha: self.isActive ? 1 : 0,
+                  autoAlpha: self2.isActive ? 1 : 0,
                 }
               ),
           },
