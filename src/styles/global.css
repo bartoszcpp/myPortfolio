@@ -642,9 +642,13 @@ textarea {
     }
   }
   .svg-fixed1 svg,
-  .svg-fixed2 svg,
   .svg-fixed3 svg {
+    display: none;
+  }
+  .svg-fixed2 svg {
     bottom: 35px;
+    right: -50px;
+    width: 40%;
   }
 
   .projekt > .container > .row {

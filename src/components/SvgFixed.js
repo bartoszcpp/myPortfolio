@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react"
-import WebDeveloper from "../assets/web-developer.svg"
+import WebDeveloper from "../assets/web--developer.svg"
 import StandingMan from "../assets/standing-man.svg"
 import ReplyMan from "../assets/reply-man.svg"
 import gsap from "gsap"
