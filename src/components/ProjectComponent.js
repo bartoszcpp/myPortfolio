@@ -150,11 +150,7 @@ const ProjectComponent = () => {
 
           {/* another row */}
           <div data-aos="fade-up" className="col-md-6 order-md-9">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://transwise.netlify.app/"
-            >
+            <a target="_blank" rel="noreferrer" href="http://new.transwise.pl/">
               <Image alt="transwise" filename="transwise.jpg" />
             </a>
           </div>
