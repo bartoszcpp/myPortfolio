@@ -432,6 +432,11 @@ html p {
   margin-top: 20px;
 }
 
+.buttonSend button:disabled {
+  background-color: rgb(200, 200, 200);
+  color: black;
+}
+
 /* .form {
     text-align: center;
   } */
