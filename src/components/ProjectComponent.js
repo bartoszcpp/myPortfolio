@@ -28,11 +28,6 @@ const ProjectComponent = () => {
               href="https://kmfurniture.netlify.app/"
             >
               <Image alt="kmfurniture" filename="kmfurniture.jpg" />
-              {/* <img
-                className="img-fluid"
-                src="/kmfurniture.png"
-                alt="kmfurniture"
-              /> */}
             </a>
           </div>
           <div data-aos="fade-up" className="col-md-6 order-md-2 opis-projekt">
@@ -62,11 +57,6 @@ const ProjectComponent = () => {
               href="https://skleponline-pl-git-skleponline.bartoszcpp.vercel.app/"
             >
               <Image alt="sklepOnline" filename="sklepOnline.jpg" />
-              {/* <img
-                className="img-fluid"
-                src="/sklepOnline.png"
-                alt="sklepOnline"
-              /> */}
             </a>
           </div>
 
@@ -98,15 +88,44 @@ const ProjectComponent = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="http://www.lg-tech.com.pl/"
+              href="https://library-star-wars.vercel.app/"
             >
-              <Image alt="lg-tech" filename="lg-tech.jpg" />
-              {/* <img className="img-fluid" src="/lg-tech.png" alt="lg-tech" /> */}
+              <Image alt="star-wars" filename="star-wars.png" />
             </a>
           </div>
           <div
             data-aos="fade-down"
             className="col-md-6 order-md-6 opis-projekt"
+          >
+            <h3>Star wars Library</h3>
+            <p>Technologie:</p>
+            <div className="svgIcons">
+              <Icon icon={bxlReact} />
+              <Icon icon={nextjsIcon} />
+              <Icon icon={bootstrapIcon} />
+            </div>
+            <br />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/bartoszcpp/libraryStarWars"
+            >
+              Github
+            </a>
+          </div>
+          {/* another row */}
+          <div data-aos="fade-down" className="col-md-6 order-md-8">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="http://www.lg-tech.com.pl/"
+            >
+              <Image alt="lg-tech" filename="lg-tech.jpg" />
+            </a>
+          </div>
+          <div
+            data-aos="fade-down"
+            className="col-md-6 order-md-7 opis-projekt text-md-right"
           >
             <h3>LG-tech.com.pl</h3>
             <p>Technologie:</p>
