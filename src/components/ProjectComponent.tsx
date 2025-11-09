@@ -13,9 +13,9 @@ import phpIcon from "@iconify/icons-cib/php"
 import graphqlIcon from "@iconify/icons-cib/graphql"
 import Image from "./Image"
 
-const ProjectComponent = () => {
+const ProjectComponent: React.FC = () => {
   return (
-    <section className="projekt" id="section2">
+    <section className="project" id="section2">
       <div className="container">
         <h2 className="subtitleH2" data-aos="fade-down">
           PROJEKTY
@@ -30,7 +30,7 @@ const ProjectComponent = () => {
               <Image alt="kmfurniture" filename="kmfurniture.jpg" />
             </a>
           </div>
-          <div data-aos="fade-up" className="col-md-6 order-md-2 opis-projekt">
+          <div data-aos="fade-up" className="col-md-6 order-md-2 project-description">
             <h3>KMFurniture.pl</h3>
             <p>Technologie:</p>
             <div className="svgIcons">
@@ -62,7 +62,7 @@ const ProjectComponent = () => {
 
           <div
             data-aos="fade-down"
-            className="col-md-6 order-md-3 opis-projekt text-md-right"
+            className="col-md-6 order-md-3 project-description text-md-right"
           >
             <h3>sklepOnline.pl</h3>
             <p>Technologie:</p>
@@ -95,7 +95,7 @@ const ProjectComponent = () => {
           </div>
           <div
             data-aos="fade-down"
-            className="col-md-6 order-md-6 opis-projekt"
+            className="col-md-6 order-md-6 project-description"
           >
             <h3>Star wars Library</h3>
             <p>Technologie:</p>
@@ -125,7 +125,7 @@ const ProjectComponent = () => {
           </div>
           <div
             data-aos="fade-down"
-            className="col-md-6 order-md-7 opis-projekt text-md-right"
+            className="col-md-6 order-md-7 project-description text-md-right"
           >
             <h3>LG-tech.com.pl</h3>
             <p>Technologie:</p>
@@ -157,7 +157,7 @@ const ProjectComponent = () => {
               <Image alt="frankowicze" filename="frankowicze.jpg" />
             </a>
           </div>
-          <div data-aos="fade-up" className="col-md-6 order-md-7 opis-projekt">
+          <div data-aos="fade-up" className="col-md-6 order-md-7 project-description">
             <h3>Frankowicze</h3>
             <p>Technologie:</p>
             <div className="svgIcons">
@@ -173,7 +173,7 @@ const ProjectComponent = () => {
               <Image alt="transwise" filename="transwise.jpg" />
             </a>
           </div>
-          <div data-aos="fade-up" className="col-md-6 order-md-10 opis-projekt">
+          <div data-aos="fade-up" className="col-md-6 order-md-10 project-description">
             <h3>Transwise</h3>
             <p>Technologie:</p>
             <div className="svgIcons">
@@ -191,3 +191,4 @@ const ProjectComponent = () => {
 }
 
 export default ProjectComponent
+

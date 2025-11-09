@@ -1,7 +1,7 @@
 import React from "react"
 import HookForm from "./HookForm"
 
-const ContactForm = () => {
+const ContactForm: React.FC = () => {
   const {
     inputs,
     handleInputChange,
@@ -72,3 +72,4 @@ const ContactForm = () => {
 }
 
 export default ContactForm
+

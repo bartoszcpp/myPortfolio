@@ -1,0 +1,97 @@
+@use 'mixins' as *;
+
+// Grid system
+.container {
+  @include container;
+}
+
+.row {
+  @include row;
+}
+
+.col-md-6 {
+  @include col-base;
+  @include col-md(6);
+}
+
+.col-lg-6 {
+  @include col-base;
+  @include col-lg(6);
+}
+
+.col-lg-8 {
+  @include col-base;
+  @include col-lg(8);
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.text-md-right {
+  @media (min-width: $breakpoint-md) {
+    text-align: right;
+  }
+}
+
+// Order utilities
+.order-md-1 {
+  @media (min-width: $breakpoint-md) {
+    order: 1;
+  }
+}
+
+.order-md-2 {
+  @media (min-width: $breakpoint-md) {
+    order: 2;
+  }
+}
+
+.order-md-3 {
+  @media (min-width: $breakpoint-md) {
+    order: 3;
+  }
+}
+
+.order-md-4 {
+  @media (min-width: $breakpoint-md) {
+    order: 4;
+  }
+}
+
+.order-md-5 {
+  @media (min-width: $breakpoint-md) {
+    order: 5;
+  }
+}
+
+.order-md-6 {
+  @media (min-width: $breakpoint-md) {
+    order: 6;
+  }
+}
+
+.order-md-7 {
+  @media (min-width: $breakpoint-md) {
+    order: 7;
+  }
+}
+
+.order-md-8 {
+  @media (min-width: $breakpoint-md) {
+    order: 8;
+  }
+}
+
+.order-md-9 {
+  @media (min-width: $breakpoint-md) {
+    order: 9;
+  }
+}
+
+.order-md-10 {
+  @media (min-width: $breakpoint-md) {
+    order: 10;
+  }
+}
+

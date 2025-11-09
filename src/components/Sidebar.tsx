@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "react-scroll"
 
-const Sidebar = () => {
-  const [scrollDir, setScrollDir] = useState("scrolling down")
-  const [styleActive, setStyleActive] = useState("scroll-down")
+const Sidebar: React.FC = () => {
+  const [scrollDir, setScrollDir] = useState<"scrolling down" | "scrolling up">("scrolling down")
+  const [styleActive, setStyleActive] = useState<"scroll-down" | "scroll-up">("scroll-down")
 
   useEffect(() => {
     const threshold = 0
     let lastScrollY = window.pageYOffset
     let ticking = false
 
-    const updateScrollDir = () => {
+    const updateScrollDir = (): void => {
       const scrollY = window.pageYOffset
 
       if (Math.abs(scrollY - lastScrollY) < threshold) {
@@ -22,7 +22,7 @@ const Sidebar = () => {
       ticking = false
     }
 
-    const onScroll = () => {
+    const onScroll = (): void => {
       if (!ticking) {
         window.requestAnimationFrame(updateScrollDir)
         ticking = true
@@ -85,3 +85,4 @@ const Sidebar = () => {
 }
 
 export default Sidebar
+

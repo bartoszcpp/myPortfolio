@@ -1,6 +1,6 @@
 import React from "react"
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <section className="footer">
       <p className="text-right">Bartosz Ciąpała 2020</p>
@@ -9,3 +9,4 @@ const Footer = () => {
 }
 
 export default Footer
+

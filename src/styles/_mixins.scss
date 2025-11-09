@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+// Mixins
+@mixin container {
+  width: 100%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $gutter;
+}
+
+@mixin row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 (-$gutter);
+}
+
+@mixin col-base {
+  position: relative;
+  width: 100%;
+  padding: 0 $gutter;
+}
+
+@mixin col($size) {
+  @include col-base;
+  flex: 0 0 percentage($size / 12);
+  max-width: percentage($size / 12);
+}
+
+@mixin col-md($size) {
+  @media (min-width: $breakpoint-md) {
+    flex: 0 0 percentage($size / 12);
+    max-width: percentage($size / 12);
+  }
+}
+
+@mixin col-lg($size) {
+  @media (min-width: $breakpoint-lg) {
+    flex: 0 0 percentage($size / 12);
+    max-width: percentage($size / 12);
+  }
+}
+

@@ -1,0 +1,73 @@
+@use 'variables';
+
+// Global responsive styles
+@media (max-width: 576px) {
+  main {
+    padding: 0 10px 10px 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  html h3 {
+    font-size: 32px;
+  }
+
+  html p {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  html h1 {
+    font-size: 54px;
+  }
+
+  html h2 {
+    font-size: 36px;
+  }
+
+  html h3 {
+    font-size: 34px;
+  }
+
+  html p {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 575px) {
+  html h1 {
+    font-size: 50px;
+  }
+
+  html h2 {
+    font-size: 32px;
+  }
+
+  html h3 {
+    font-size: 28px;
+  }
+
+  html p {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 399px) {
+  html h1 {
+    font-size: 46px;
+  }
+
+  html h2 {
+    font-size: 28px;
+  }
+
+  html h3 {
+    font-size: 24px;
+  }
+
+  html p {
+    font-size: 20px;
+  }
+}
+
