@@ -1,6 +1,6 @@
 import React from "react"
 
-const InfoText = () => {
+const InfoText: React.FC = () => {
   return (
     <>
       <div data-aos="fade-down" className="col-lg-6 ml-auto info-container">
@@ -22,3 +22,4 @@ const InfoText = () => {
 }
 
 export default InfoText
+

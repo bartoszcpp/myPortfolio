@@ -11,7 +11,7 @@ import bxlCss3 from "@iconify/icons-bx/bxl-css3"
 import sassAlt from "@iconify/icons-cib/sass-alt"
 import javascriptIcon from "@iconify/icons-cib/javascript"
 
-const FrontComponent = () => {
+const FrontComponent: React.FC = () => {
   return (
     <>
       <section className="front-section" id="section1">
@@ -37,3 +37,4 @@ const FrontComponent = () => {
 }
 
 export default FrontComponent
+

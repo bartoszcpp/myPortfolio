@@ -4,14 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
-const ContactComponent = () => {
+const ContactComponent: React.FC = () => {
   return (
-    <section className="kontakt" id="section3">
+    <section className="contact-section" id="section3">
       <div className="container">
         <h2 data-aos="fade-up">KONTAKT</h2>
         <div className="row">
           <div className="col-lg-6 ml-auto">
-            <div data-aos="fade-up" className="dane-kontaktowe">
+            <div data-aos="fade-up" className="contact-details">
               <p>
                 <strong>e-mail:</strong> <br />
                 bartosz.cp@gmail.com
